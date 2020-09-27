@@ -1,14 +1,16 @@
-/* #2c302E */
-/* 474A48 */
-/* 909590 */
-/* 9AE19D */
-/* 537A5A */
+/* #49646F Dark Blue */
+/* #9BB1B7 Light Blue */
+ /* #D8BA9D Tan */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #49646F;
 }
 
 
@@ -24,8 +26,8 @@
     cursor: pointer;
     display:  inline-block;
     padding: 10px 30px;
-    color: #fff;
-    background-color: #537A5A;
+    color: #49646F;
+    background-color: #fff;
     border: none;
     border-radius: 5px;
 }
@@ -71,14 +73,14 @@
 }
 
 .navbar .active, .nav-item:hover {
-    border-bottom: 2px solid #bf4c0a;
+    border-bottom: 2px solid #D8BA9D;
 }
 
 /* Home */
 
 .home {
     flex-direction: column;
-    /* background: #537A5A; */
+    background: #9BB1B7;
     /* color: #fff; */
 }
 
@@ -101,6 +103,7 @@
 }
 
 .home-info h1 {
+    margin-bottom: 20px;
     
 }
 .home-info p {
@@ -117,6 +120,7 @@
     text-align: center;
     margin-top: 50px;
     font-weight: 500;
+    color: #fff;
 }
 
 .explore-container {
@@ -165,6 +169,7 @@
     text-align: center;
     margin: 50px;
     font-weight: 500;
+    color: #fff;
 }
 
 .trail .info {
@@ -175,13 +180,16 @@
 
 .trail .info h3 {
     font-size: 18px;
-    border: 2px solid #333;
+    /* border: 2px solid #9BB1B7; */
+    background: #333;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+    color: white;
 }
 
 .trail .info p {
+    color: #fff;
     margin-top: 20px;
     font-size: 16px;
     text-indent: 30px;
@@ -224,6 +232,7 @@ footer a {
 
     .home-info {
         width: 40%;
+        padding: 40px;
     }
 
     .explore-info {
