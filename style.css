@@ -1,0 +1,273 @@
+/* #2c302E */
+/* 474A48 */
+/* 909590 */
+/* 9AE19D */
+/* 537A5A */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Utilities */
+
+.navbar {
+    /* background: #9AE19D !important; */
+}
+
+/* Button */
+.btn {
+    cursor: pointer;
+    display:  inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #537A5A;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Flex */
+.flex-box {
+    display: flex;
+} 
+
+/* Navbar */
+
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #676767;
+    background: #fff;
+}
+
+
+.navbar #nav-logo {
+    width: 160px;
+    padding: 14px;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+}
+
+.nav-item {
+    /* display: flex !important;  */
+    width: 120px !important;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    color: #333 !important;
+}
+
+#navbarSupportedContent {
+    /* padding-left: 30px; */
+}
+
+.navbar .active, .nav-item:hover {
+    border-bottom: 2px solid #bf4c0a;
+}
+
+/* Home */
+
+.home {
+    flex-direction: column;
+    /* background: #537A5A; */
+    /* color: #fff; */
+}
+
+.hero {
+    border: 1px solid #333;
+    background: url('https://images.unsplash.com/photo-1570330630305-8f63b7a7a4ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat right center/cover;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+}
+
+.home-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    margin: 40px 0;
+    padding: 20px 10px;
+}
+
+.home-info h1 {
+    
+}
+.home-info p {
+
+}
+.home-info a {
+    margin: 40px 0;
+}
+
+/* Explore */
+
+.explore-info h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.explore-container {
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.explore-container .flex-box {
+    flex-direction: column;
+}
+
+.explore-container .flex-box a { 
+    margin: 40px 0;
+    background: black;
+    text-decoration: none;
+    color: #fff;
+    /* border-radius: 3%; */
+    overflow: hidden;
+
+}
+
+.explore-container .flex-box a img {
+    width: 100%;
+}
+
+.explore-container .flex-box .img-info {
+    padding: 15px 20px 0 20px;
+}
+
+/* Trail Pages */
+
+.trail {
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: space-between; */
+    /* height: 800px; */
+    padding-bottom: 60px;
+    /* border: 1px solid green; */
+}
+
+.trail .title-img img {
+    width: 100vw;
+}
+.trail .title-img h1 {
+    text-align: center;
+    margin: 50px;
+    font-weight: 500;
+}
+
+.trail .info {
+    /* border: 1px solid green; */
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.trail .info h3 {
+    font-size: 18px;
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trail .info p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-indent: 30px;
+    padding: 20px;
+    
+}
+
+.trail .map {
+    width: 100%;
+}
+.trail .map iframe {
+    width: 100%;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media(min-width: 769px) {
+
+    .home {
+        flex-direction: row;
+        height: calc(100vh - 106px);
+    }
+
+    .hero {
+        height: 100%;
+    }
+
+    .home-info {
+        width: 40%;
+    }
+
+    .explore-info {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    .explore-container {
+        height: calc(100vh - 120px);
+    }
+
+    .explore-container .flex-box {
+        flex-direction: row;
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 5px;
+    }
+
+    .explore-container .flex-box a {
+        margin: 15px;
+    }
+
+    .trail {
+        width: 1000px;
+        margin: auto;
+        flex-direction: row;
+    }
+
+    .trail .title-img img {
+        width: 100%;
+    }
+    
+    .trail .info p {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 2em;
+    }
+
+    .trail .map {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    div#navbarSupportedContent.collapse.navbar-collapse {
+        font-size: 100px !important;
+    }
+}
